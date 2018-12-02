@@ -1,0 +1,302 @@
+<html>
+    <head>
+        <title>Ejercicios</title>
+    </head>
+    <body>
+        <script>
+            //Declaraciones
+            //var = se puede repetir varias veces
+            var x = 10;
+            //Let  = solo se puede 1 vez cada varible
+            let i = 20;
+            //const = toca definirle un valor obligatoriamente
+            const numero = 40;
+
+
+            //Tipos de Datos
+            //boolean = verdadro o falso unicamente
+            var boleano = true; 
+            false
+            
+            //Symbol = son tipo de dato único que es inmutable y puede ser utilizado como identificador
+            var sym1 = Symbol();
+
+            //number = 2 Tiposde numeros enteros y decimales Int - Float
+            var edad = 20;
+            var edad = 20.2;
+            
+            //String = cadenas de texto
+            var texto = "Texto";
+
+            //Object = objeto
+            var Objeto = {
+                color: "black",
+                size: 10
+            } 
+            // Undefined = Es una variable la cual se encuentra vacia
+            var nada;
+
+            //Null = Para cambiar el valor de la varible a nulo
+            var numero1 = 10;
+            var numero1 = null;
+            
+
+            //Literales
+            //Array = Podemos seleccionar varias opciones
+                var numeros_R = [1, 2, 3]
+                document.write(amigos[0]);
+            //Integer = Pasa un numero decimal a entero
+            var a = parseInt("10")
+            // flotantes = devuelve un número de punto flotante
+            parseFloat( cadena );
+            //RegExp = es un objeto que describe un patrón de caracteres
+            var patt = /Ejemplo/i
+
+            //Sentencias Condicionales
+            //if = se ejecutará si una condición es verdadera
+            if (condition) {
+                 "bloque de codigo si la condicion es verdadera"
+                }
+            
+            //else =  Cuando el bloque de código que se ejecuta y la condición es falsa
+            if (hora < 18) {
+             diga = "Buenos dias";
+            } else {
+             diga = "Buenas noches";
+            }
+            // switch =  seleccionar uno de los muchos bloques de código que se ejecutarán
+            switch (new Date().getDia()) {
+                case 0:
+                 dia = "Lunes";
+             break;
+            }
+
+            //Sentencias de Captura de Errores
+            //throw = La sentencia throw arroja (genera) un error
+            throw "Too big";    
+            throw 500; 
+
+            // try - catch = captura los errores de codificacion
+            try {
+                "Block of code to try"
+            }
+            catch(err) {
+             "Block of code to handle errors"
+            }
+            
+            //Ciclos e Iteraciones
+            //for = recorre un bloque de código varias veces
+            for (i = 0; i < 5; i++) {
+                text += "Los numeros son " + i + "<br>";
+            }
+            //while = pasa por un bloque de código mientras una condición específica es verdadera
+            while (i < 10) {
+                 text += "El Numero es " + i;
+                i++;
+            }
+            //do..while =  también recorre un bloque de código mientras una condición específica es verdadera
+            do {
+                text += "Los Numeros son  " + i;
+                 i++;
+            }
+         while (i < 10);
+            // for..in = recorre las propiedades de un objeto
+            var person = {fname:"John", lname:"Doe", age:25}; 
+
+            var text = "";
+            var x;
+            for (x in person) {
+                text += person[x];
+            }       
+            //break = La instrucción break "salta" de un bucle
+            for (i = 0; i < 10; i++) {
+                if (i === 3) { break; }
+                text += "El Numero es " + i + "<br>";
+            }
+            //continue = La instrucción continue "salta" una iteración en el bucle
+            for (i = 0; i < 10; i++) {
+                if (i === 3) { continue; }
+                text += "The number is " + i + "<br>";
+            }
+            //for..of =  crea un bucle que itera a través de los elementos de objetos 
+            let iterable = [10, 20, 30];
+
+            for (let value of iterable) {
+                value += 1;
+                console.log(value);
+            }
+            //Funciones
+            //Expresiones
+            var square = function(number) {return number * number};
+            var x = square(4) //x obtiene el valor 16
+
+            //Llamadas
+            square(5);
+
+            //Argumentos 
+            arguments[i]
+
+            //Parametros
+            function multiply(a, b) {
+             b = typeof b !== 'undefined' ?  b : 1;
+  
+                 return a*b;
+            }
+
+                multiply(5); // 5
+            
+            //Funciones Flecha
+            var a = [
+            "Hydrogen",
+            "Helium",
+            "Lithium",
+            "Beryl­lium"
+            ];
+
+                var a2 = a.map(function(s){ return s.length });
+
+                var a3 = a.map( s => s.length );
+
+            // Funciones Predefinidas
+            "eval"
+            "isFinite"
+            "isNaN"
+            "parseInt and parseFloat"
+            "Number and String"
+
+            //Operadores
+            // Asignacion = asigna un valor al operando de la izquierda en función del valor del operando de la derecha
+            x = y
+            x += y
+            //Destructuración
+            var foo = ['uno','dos','tres'];
+
+            // sin destructuración
+                var uno  = foo[0];
+                var dos  = foo[1];
+                var tres = foo[2];
+
+            // con destructuración
+                var [uno, dos, tres] = foo;
+
+            //Comparacion = compara sus operandos y devuelve un valor lógico en función de si la comparación es 
+        
+            (true)
+            (false)
+
+            var var1 = 3;
+            var var2 = 4;
+            
+            //Aritmeticos
+            "suma (+), resta (-),  multiplicación (*) división (/)"
+            //Logico = utilizados con valores booleanos; estos operadores devuelven un valor booleano
+            var a1 = true  && true;     // t && t devuelve true
+            var a2 = true  && false;    // t && f devuelve false
+            var a3 = false && true;     // f && t devuelve false
+            var a4 = false && (3 == 4); // f && f devuelve false
+            var a5 = "Cat" && "Dog";    // t && t devuelve "Dog"
+            var a6 = false && "Cat";    // f && t devuelve false
+            var a7 = "Cat" && false;    // t && f devuelve false
+
+            // Ternario 
+            condición ? valor1 : valor2
+            var estado = (edad >= 18) ? "adulto" : "menor";
+            
+            //Delete = es eliminar un objeto, una propiedad de un objeto, o un elemento en el indice específico de un Array
+            delete nombreObjeto;
+            delete nombreObjeto.propiedad;
+            delete nombreObjeto[indice];
+            delete propiedad; // solo admitido con una declaración "with"
+
+            //Typeof
+            typeof operando
+            typeof (operando)
+            var miFuncion = new Function("5 + 2");
+            var forma = "redonda";
+            var largo = 1;
+            var hoy = new Date();  
+            typeof miFuncion; // devuelve "function"
+            typeof forma;     // devuelve "string"
+            typeof largo;     // devuelve "number"
+            typeof hoy;       // devuelve "object"
+            typeof noExiste;  // devuelve "undefined" 
+
+            //Void = puede ser usado para especificar una expresión como un link de hipertexto
+            <a href="javascript:void(0)">Haz click aquí para no hacer nada</a>
+
+            //In
+            nombrePropiedadoNumero in nombreObjeto
+
+            //instanceOf
+            nombreObjeto instanceof tipoObjeto
+            var elDia = new Date(1995, 12, 17);
+            if (elDia instanceof Date) {
+            // código a ejecutar
+            }
+            
+            // Presendencia de operadores = determina el orden en que estos son aplicados cuando se evalúa una expresión
+            "miembro	. []"
+            "llamar / crear instancia	() new"
+            "negación / incremento	! ~ - + ++ -- typeof void delete"
+            "multiplicación / división	* / %"
+            "adición / sustracción	+ -"
+
+            //This =  para referirse al objeto actual
+            this["nombreDePropiedad"]
+
+            //Super = para llamar funciones en el objeto padre
+
+            super([argumentos]); // llama al constructor padre.
+            super.funcionEnPadre([argumentos]);
+            
+            //Operador de propagación
+
+            var partes = ["hombros", "rodillas"];
+            var letra = ["cabeza", ...partes, "y", "dedos"];
+
+            //Colecciones
+            //Metodos Array = convierte una matriz en una cadena de valores de matriz (separados por comas)
+            var fruits = ["Banana", "Orange", "Apple", "Mango"];
+            document.getElementById("demo").innerHTML = fruits.toString();
+            
+            //Map = almacena pares clave/valor. Cualquier valor (tanto objetos como valores primitivos) 
+            new Map([iterable])
+
+            //Sets = permite almacenar valores únicos de cualquier tipo, incluso valores primitivos u objetos de referencia.
+            new Set([iterable]);
+
+            //Objetos
+            //Constructores =  para crear e inicializar un objeto creado apartir de una clase.
+            constructor(length)
+                // Aquí, llama al constructor de la clase padre con sus longitudes
+                 // contemplando la anchura y la altura del Polígono
+            
+            
+            //Metodos = son acciones que se pueden realizar en objeto
+           // nombre completo	function () {return this.firstName + " " + this.lastName;}
+
+            //Herencia
+            var o = {
+                a: 2,
+                m: function(b){
+                    return this.a + 1;
+                }
+            };
+
+            //Getter y setter 
+            const obj = {
+            get prop() {
+                return this.__prop__;
+            },
+            set prop(value) {
+                this.__prop__ = value * 2;
+            },
+            };
+
+            obj.prop = 12;
+
+            console.log(obj.prop); //24
+
+        </script>
+    </body>
+</html>
